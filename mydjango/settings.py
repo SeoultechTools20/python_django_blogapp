@@ -29,11 +29,7 @@ SECRET_KEY = '80sdimflyb9m#f0f&#alqa@$-j^$ee_cs2^%j)ih)jphazizbb'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    '127.0.0.1',
-    'localhost',
-    '15.188.146.157',
-]
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -91,7 +87,7 @@ DATABASES = {
         'NAME': 'django_db', # DB명
         'USER': 'python', # 데이터베이스 계정
         'PASSWORD':'python', # 계정 비밀번호
-        'HOST':'djangomysql.celwxylrchsy.eu-west-3.rds.amazonaws.com', # 데이테베이스 IP
+        'HOST':'mysql-svc', # 데이테베이스 IP
         'PORT':'3306', # 데이터베이스 port
     }
 }
